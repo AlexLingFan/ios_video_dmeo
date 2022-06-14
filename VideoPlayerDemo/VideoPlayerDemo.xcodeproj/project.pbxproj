@@ -1,0 +1,929 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0BC5074E2AF9962BD1C116D5 /* Pods_VideoPlayerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D218FE41A6205F6F9B604266 /* Pods_VideoPlayerDemo.framework */; };
+		28C58E452858813C003E3BA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C58E442858813C003E3BA9 /* AppDelegate.swift */; };
+		28C58E492858813C003E3BA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C58E482858813C003E3BA9 /* ViewController.swift */; };
+		28C58E4C2858813C003E3BA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C58E4A2858813C003E3BA9 /* Main.storyboard */; };
+		28C58E512858813D003E3BA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C58E4F2858813D003E3BA9 /* LaunchScreen.storyboard */; };
+		28C58E5C2858813D003E3BA9 /* VideoPlayerDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C58E5B2858813D003E3BA9 /* VideoPlayerDemoTests.swift */; };
+		28C58E662858813D003E3BA9 /* VideoPlayerDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C58E652858813D003E3BA9 /* VideoPlayerDemoUITests.swift */; };
+		28C58E682858813D003E3BA9 /* VideoPlayerDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C58E672858813D003E3BA9 /* VideoPlayerDemoUITestsLaunchTests.swift */; };
+		28C58E772858819E003E3BA9 /* testMovie.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 28C58E752858819E003E3BA9 /* testMovie.mp4 */; };
+		28C58E782858819E003E3BA9 /* testSong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28C58E762858819E003E3BA9 /* testSong.mp3 */; };
+		28C58E7A2858836F003E3BA9 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C58E792858836F003E3BA9 /* VideoViewController.swift */; };
+		28C58E7C2858839A003E3BA9 /* PlayerListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C58E7B2858839A003E3BA9 /* PlayerListTableViewCell.swift */; };
+		28C58EA62858844E003E3BA9 /* String+AlexEncryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C58E802858844E003E3BA9 /* String+AlexEncryption.swift */; };
+		28C58EA72858844E003E3BA9 /* AlexResponseExpandButtton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C58E812858844E003E3BA9 /* AlexResponseExpandButtton.swift */; };
+		28C58EA82858844E003E3BA9 /* AlexDefaultVideoCacheLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C58E832858844E003E3BA9 /* AlexDefaultVideoCacheLocation.swift */; };
+		28C58EA92858844E003E3BA9 /* AlexMediaCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C58E842858844E003E3BA9 /* AlexMediaCacheManager.swift */; };
+		28C58EAA2858844E003E3BA9 /* AlexMediaCryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C58E852858844E003E3BA9 /* AlexMediaCryptor.swift */; };
+		28C58EAB2858844E003E3BA9 /* AlexStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C58E862858844E003E3BA9 /* AlexStorage.swift */; };
+		28C58EAC2858844E003E3BA9 /* AlexMediaCacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C58E872858844E003E3BA9 /* AlexMediaCacher.swift */; };
+		28C58EAD2858844E003E3BA9 /* HYMediaCacheDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C58E892858844E003E3BA9 /* HYMediaCacheDelegate.swift */; };
+		28C58EAE2858844E003E3BA9 /* HYMediaCacherDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C58E8A2858844E003E3BA9 /* HYMediaCacherDelegate.swift */; };
+		28C58EAF2858844E003E3BA9 /* HYMediaCacheLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C58E8B2858844E003E3BA9 /* HYMediaCacheLocation.swift */; };
+		28C58EB02858844E003E3BA9 /* AlexVideoCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C58E8C2858844E003E3BA9 /* AlexVideoCacheManager.swift */; };
+		28C58EB12858844E003E3BA9 /* AlexPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 28C58E8E2858844E003E3BA9 /* AlexPlayer.bundle */; };
+		28C58EB22858844E003E3BA9 /* AlexPlayerCommonConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C58E902858844E003E3BA9 /* AlexPlayerCommonConfig.swift */; };
+		28C58EB32858844E003E3BA9 /* AlexPlayerConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C58E912858844E003E3BA9 /* AlexPlayerConstant.swift */; };
+		28C58EB42858844E003E3BA9 /* AlexAudiovisualCommonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C58E922858844E003E3BA9 /* AlexAudiovisualCommonModel.swift */; };
+		28C58EB52858844E003E3BA9 /* AlexCacheStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C58E942858844E003E3BA9 /* AlexCacheStorage.swift */; };
+		28C58EB62858844E003E3BA9 /* AlexFileDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C58E952858844E003E3BA9 /* AlexFileDirectory.swift */; };
+		28C58EB72858844E003E3BA9 /* AlexPlayerCommonViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C58E972858844E003E3BA9 /* AlexPlayerCommonViewDelegate.swift */; };
+		28C58EB82858844E003E3BA9 /* AlexPlayerCommonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C58E992858844E003E3BA9 /* AlexPlayerCommonView.swift */; };
+		28C58EB92858844E003E3BA9 /* AlexAudiovisualCommonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C58E9A2858844E003E3BA9 /* AlexAudiovisualCommonManager.swift */; };
+		28C58EBA2858844E003E3BA9 /* HYMoreFunctionSpeedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C58E9D2858844E003E3BA9 /* HYMoreFunctionSpeedCollectionViewCell.swift */; };
+		28C58EBB2858844E003E3BA9 /* HYSpeedyRemindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C58E9E2858844E003E3BA9 /* HYSpeedyRemindView.swift */; };
+		28C58EBC2858844E003E3BA9 /* HYEndPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C58E9F2858844E003E3BA9 /* HYEndPlayView.swift */; };
+		28C58EBD2858844E003E3BA9 /* HYWithoutNetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C58EA02858844E003E3BA9 /* HYWithoutNetView.swift */; };
+		28C58EBE2858844E003E3BA9 /* HYFullScreenMaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C58EA12858844E003E3BA9 /* HYFullScreenMaskView.swift */; };
+		28C58EBF2858844E003E3BA9 /* HYControlPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C58EA22858844E003E3BA9 /* HYControlPanelView.swift */; };
+		28C58EC02858844E003E3BA9 /* HYAccelerationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C58EA32858844E003E3BA9 /* HYAccelerationView.swift */; };
+		28C58EC12858844E003E3BA9 /* HYAudioPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C58EA42858844E003E3BA9 /* HYAudioPlayView.swift */; };
+		28C58EC22858844E003E3BA9 /* HYAudiovisualSpeedyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C58EA52858844E003E3BA9 /* HYAudiovisualSpeedyManager.swift */; };
+		28C58EC728588463003E3BA9 /* AlexPlayerCacheListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C58EC428588463003E3BA9 /* AlexPlayerCacheListCell.swift */; };
+		28C58EC828588463003E3BA9 /* AlexPlayerCacheListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C58EC528588463003E3BA9 /* AlexPlayerCacheListView.swift */; };
+		28C58EC928588463003E3BA9 /* AlexCacheProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C58EC628588463003E3BA9 /* AlexCacheProgressView.swift */; };
+		28C58ECB28588474003E3BA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28C58ECA28588474003E3BA9 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		28C58E582858813D003E3BA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28C58E392858813C003E3BA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28C58E402858813C003E3BA9;
+			remoteInfo = VideoPlayerDemo;
+		};
+		28C58E622858813D003E3BA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28C58E392858813C003E3BA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28C58E402858813C003E3BA9;
+			remoteInfo = VideoPlayerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		28C58E412858813C003E3BA9 /* VideoPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28C58E442858813C003E3BA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		28C58E482858813C003E3BA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		28C58E4B2858813C003E3BA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		28C58E502858813D003E3BA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		28C58E522858813D003E3BA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28C58E572858813D003E3BA9 /* VideoPlayerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoPlayerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28C58E5B2858813D003E3BA9 /* VideoPlayerDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerDemoTests.swift; sourceTree = "<group>"; };
+		28C58E612858813D003E3BA9 /* VideoPlayerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoPlayerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28C58E652858813D003E3BA9 /* VideoPlayerDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerDemoUITests.swift; sourceTree = "<group>"; };
+		28C58E672858813D003E3BA9 /* VideoPlayerDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		28C58E752858819E003E3BA9 /* testMovie.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = testMovie.mp4; sourceTree = "<group>"; };
+		28C58E762858819E003E3BA9 /* testSong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = testSong.mp3; sourceTree = "<group>"; };
+		28C58E792858836F003E3BA9 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		28C58E7B2858839A003E3BA9 /* PlayerListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerListTableViewCell.swift; sourceTree = "<group>"; };
+		28C58E7D285883EA003E3BA9 /* VideoPlayerDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VideoPlayerDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		28C58E802858844E003E3BA9 /* String+AlexEncryption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+AlexEncryption.swift"; sourceTree = "<group>"; };
+		28C58E812858844E003E3BA9 /* AlexResponseExpandButtton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlexResponseExpandButtton.swift; sourceTree = "<group>"; };
+		28C58E832858844E003E3BA9 /* AlexDefaultVideoCacheLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlexDefaultVideoCacheLocation.swift; sourceTree = "<group>"; };
+		28C58E842858844E003E3BA9 /* AlexMediaCacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlexMediaCacheManager.swift; sourceTree = "<group>"; };
+		28C58E852858844E003E3BA9 /* AlexMediaCryptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlexMediaCryptor.swift; sourceTree = "<group>"; };
+		28C58E862858844E003E3BA9 /* AlexStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlexStorage.swift; sourceTree = "<group>"; };
+		28C58E872858844E003E3BA9 /* AlexMediaCacher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlexMediaCacher.swift; sourceTree = "<group>"; };
+		28C58E892858844E003E3BA9 /* HYMediaCacheDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYMediaCacheDelegate.swift; sourceTree = "<group>"; };
+		28C58E8A2858844E003E3BA9 /* HYMediaCacherDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYMediaCacherDelegate.swift; sourceTree = "<group>"; };
+		28C58E8B2858844E003E3BA9 /* HYMediaCacheLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYMediaCacheLocation.swift; sourceTree = "<group>"; };
+		28C58E8C2858844E003E3BA9 /* AlexVideoCacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlexVideoCacheManager.swift; sourceTree = "<group>"; };
+		28C58E8E2858844E003E3BA9 /* AlexPlayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlexPlayer.bundle; sourceTree = "<group>"; };
+		28C58E902858844E003E3BA9 /* AlexPlayerCommonConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlexPlayerCommonConfig.swift; sourceTree = "<group>"; };
+		28C58E912858844E003E3BA9 /* AlexPlayerConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlexPlayerConstant.swift; sourceTree = "<group>"; };
+		28C58E922858844E003E3BA9 /* AlexAudiovisualCommonModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlexAudiovisualCommonModel.swift; sourceTree = "<group>"; };
+		28C58E942858844E003E3BA9 /* AlexCacheStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlexCacheStorage.swift; sourceTree = "<group>"; };
+		28C58E952858844E003E3BA9 /* AlexFileDirectory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlexFileDirectory.swift; sourceTree = "<group>"; };
+		28C58E972858844E003E3BA9 /* AlexPlayerCommonViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlexPlayerCommonViewDelegate.swift; sourceTree = "<group>"; };
+		28C58E992858844E003E3BA9 /* AlexPlayerCommonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlexPlayerCommonView.swift; sourceTree = "<group>"; };
+		28C58E9A2858844E003E3BA9 /* AlexAudiovisualCommonManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlexAudiovisualCommonManager.swift; sourceTree = "<group>"; };
+		28C58E9D2858844E003E3BA9 /* HYMoreFunctionSpeedCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYMoreFunctionSpeedCollectionViewCell.swift; sourceTree = "<group>"; };
+		28C58E9E2858844E003E3BA9 /* HYSpeedyRemindView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYSpeedyRemindView.swift; sourceTree = "<group>"; };
+		28C58E9F2858844E003E3BA9 /* HYEndPlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYEndPlayView.swift; sourceTree = "<group>"; };
+		28C58EA02858844E003E3BA9 /* HYWithoutNetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYWithoutNetView.swift; sourceTree = "<group>"; };
+		28C58EA12858844E003E3BA9 /* HYFullScreenMaskView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYFullScreenMaskView.swift; sourceTree = "<group>"; };
+		28C58EA22858844E003E3BA9 /* HYControlPanelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYControlPanelView.swift; sourceTree = "<group>"; };
+		28C58EA32858844E003E3BA9 /* HYAccelerationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYAccelerationView.swift; sourceTree = "<group>"; };
+		28C58EA42858844E003E3BA9 /* HYAudioPlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYAudioPlayView.swift; sourceTree = "<group>"; };
+		28C58EA52858844E003E3BA9 /* HYAudiovisualSpeedyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYAudiovisualSpeedyManager.swift; sourceTree = "<group>"; };
+		28C58EC428588463003E3BA9 /* AlexPlayerCacheListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlexPlayerCacheListCell.swift; sourceTree = "<group>"; };
+		28C58EC528588463003E3BA9 /* AlexPlayerCacheListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlexPlayerCacheListView.swift; sourceTree = "<group>"; };
+		28C58EC628588463003E3BA9 /* AlexCacheProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlexCacheProgressView.swift; sourceTree = "<group>"; };
+		28C58ECA28588474003E3BA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		300EECBDDEB42E8D4282F382 /* Pods-VideoPlayerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoPlayerDemo.release.xcconfig"; path = "Target Support Files/Pods-VideoPlayerDemo/Pods-VideoPlayerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		5932351F3EC1EA10B9B2405D /* Pods-VideoPlayerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoPlayerDemo.debug.xcconfig"; path = "Target Support Files/Pods-VideoPlayerDemo/Pods-VideoPlayerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		D218FE41A6205F6F9B604266 /* Pods_VideoPlayerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoPlayerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28C58E3E2858813C003E3BA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BC5074E2AF9962BD1C116D5 /* Pods_VideoPlayerDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28C58E542858813D003E3BA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28C58E5E2858813D003E3BA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28C58E382858813C003E3BA9 = {
+			isa = PBXGroup;
+			children = (
+				28C58E432858813C003E3BA9 /* VideoPlayerDemo */,
+				28C58E5A2858813D003E3BA9 /* VideoPlayerDemoTests */,
+				28C58E642858813D003E3BA9 /* VideoPlayerDemoUITests */,
+				28C58E422858813C003E3BA9 /* Products */,
+				7ECD0C37B9EB44C3989F020D /* Pods */,
+				5A818AE1775D4C0067F1A12B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		28C58E422858813C003E3BA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28C58E412858813C003E3BA9 /* VideoPlayerDemo.app */,
+				28C58E572858813D003E3BA9 /* VideoPlayerDemoTests.xctest */,
+				28C58E612858813D003E3BA9 /* VideoPlayerDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28C58E432858813C003E3BA9 /* VideoPlayerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				28C58E742858819E003E3BA9 /* Source */,
+				28C58E7E2858844E003E3BA9 /* AlexPlayer */,
+				28C58EC328588463003E3BA9 /* AlexProactiveCaching */,
+				28C58E442858813C003E3BA9 /* AppDelegate.swift */,
+				28C58E482858813C003E3BA9 /* ViewController.swift */,
+				28C58E792858836F003E3BA9 /* VideoViewController.swift */,
+				28C58E7B2858839A003E3BA9 /* PlayerListTableViewCell.swift */,
+				28C58E7D285883EA003E3BA9 /* VideoPlayerDemo-Bridging-Header.h */,
+				28C58E4A2858813C003E3BA9 /* Main.storyboard */,
+				28C58ECA28588474003E3BA9 /* Assets.xcassets */,
+				28C58E4F2858813D003E3BA9 /* LaunchScreen.storyboard */,
+				28C58E522858813D003E3BA9 /* Info.plist */,
+			);
+			path = VideoPlayerDemo;
+			sourceTree = "<group>";
+		};
+		28C58E5A2858813D003E3BA9 /* VideoPlayerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				28C58E5B2858813D003E3BA9 /* VideoPlayerDemoTests.swift */,
+			);
+			path = VideoPlayerDemoTests;
+			sourceTree = "<group>";
+		};
+		28C58E642858813D003E3BA9 /* VideoPlayerDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				28C58E652858813D003E3BA9 /* VideoPlayerDemoUITests.swift */,
+				28C58E672858813D003E3BA9 /* VideoPlayerDemoUITestsLaunchTests.swift */,
+			);
+			path = VideoPlayerDemoUITests;
+			sourceTree = "<group>";
+		};
+		28C58E742858819E003E3BA9 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				28C58E752858819E003E3BA9 /* testMovie.mp4 */,
+				28C58E762858819E003E3BA9 /* testSong.mp3 */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		28C58E7E2858844E003E3BA9 /* AlexPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				28C58E7F2858844E003E3BA9 /* Extension */,
+				28C58E822858844E003E3BA9 /* Cache */,
+				28C58E8D2858844E003E3BA9 /* Resources */,
+				28C58E8F2858844E003E3BA9 /* Models */,
+				28C58E932858844E003E3BA9 /* FileManager */,
+				28C58E962858844E003E3BA9 /* Protocols */,
+				28C58E982858844E003E3BA9 /* Player */,
+			);
+			path = AlexPlayer;
+			sourceTree = "<group>";
+		};
+		28C58E7F2858844E003E3BA9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				28C58E802858844E003E3BA9 /* String+AlexEncryption.swift */,
+				28C58E812858844E003E3BA9 /* AlexResponseExpandButtton.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		28C58E822858844E003E3BA9 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				28C58E832858844E003E3BA9 /* AlexDefaultVideoCacheLocation.swift */,
+				28C58E842858844E003E3BA9 /* AlexMediaCacheManager.swift */,
+				28C58E852858844E003E3BA9 /* AlexMediaCryptor.swift */,
+				28C58E862858844E003E3BA9 /* AlexStorage.swift */,
+				28C58E872858844E003E3BA9 /* AlexMediaCacher.swift */,
+				28C58E882858844E003E3BA9 /* Protocols */,
+				28C58E8C2858844E003E3BA9 /* AlexVideoCacheManager.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		28C58E882858844E003E3BA9 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				28C58E892858844E003E3BA9 /* HYMediaCacheDelegate.swift */,
+				28C58E8A2858844E003E3BA9 /* HYMediaCacherDelegate.swift */,
+				28C58E8B2858844E003E3BA9 /* HYMediaCacheLocation.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		28C58E8D2858844E003E3BA9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				28C58E8E2858844E003E3BA9 /* AlexPlayer.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		28C58E8F2858844E003E3BA9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				28C58E902858844E003E3BA9 /* AlexPlayerCommonConfig.swift */,
+				28C58E912858844E003E3BA9 /* AlexPlayerConstant.swift */,
+				28C58E922858844E003E3BA9 /* AlexAudiovisualCommonModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		28C58E932858844E003E3BA9 /* FileManager */ = {
+			isa = PBXGroup;
+			children = (
+				28C58E942858844E003E3BA9 /* AlexCacheStorage.swift */,
+				28C58E952858844E003E3BA9 /* AlexFileDirectory.swift */,
+			);
+			path = FileManager;
+			sourceTree = "<group>";
+		};
+		28C58E962858844E003E3BA9 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				28C58E972858844E003E3BA9 /* AlexPlayerCommonViewDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		28C58E982858844E003E3BA9 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				28C58E992858844E003E3BA9 /* AlexPlayerCommonView.swift */,
+				28C58E9A2858844E003E3BA9 /* AlexAudiovisualCommonManager.swift */,
+				28C58E9B2858844E003E3BA9 /* ChildControlViews */,
+				28C58EA52858844E003E3BA9 /* HYAudiovisualSpeedyManager.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		28C58E9B2858844E003E3BA9 /* ChildControlViews */ = {
+			isa = PBXGroup;
+			children = (
+				28C58E9C2858844E003E3BA9 /* Cells */,
+				28C58E9E2858844E003E3BA9 /* HYSpeedyRemindView.swift */,
+				28C58E9F2858844E003E3BA9 /* HYEndPlayView.swift */,
+				28C58EA02858844E003E3BA9 /* HYWithoutNetView.swift */,
+				28C58EA12858844E003E3BA9 /* HYFullScreenMaskView.swift */,
+				28C58EA22858844E003E3BA9 /* HYControlPanelView.swift */,
+				28C58EA32858844E003E3BA9 /* HYAccelerationView.swift */,
+				28C58EA42858844E003E3BA9 /* HYAudioPlayView.swift */,
+			);
+			path = ChildControlViews;
+			sourceTree = "<group>";
+		};
+		28C58E9C2858844E003E3BA9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				28C58E9D2858844E003E3BA9 /* HYMoreFunctionSpeedCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		28C58EC328588463003E3BA9 /* AlexProactiveCaching */ = {
+			isa = PBXGroup;
+			children = (
+				28C58EC428588463003E3BA9 /* AlexPlayerCacheListCell.swift */,
+				28C58EC528588463003E3BA9 /* AlexPlayerCacheListView.swift */,
+				28C58EC628588463003E3BA9 /* AlexCacheProgressView.swift */,
+			);
+			path = AlexProactiveCaching;
+			sourceTree = "<group>";
+		};
+		5A818AE1775D4C0067F1A12B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D218FE41A6205F6F9B604266 /* Pods_VideoPlayerDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7ECD0C37B9EB44C3989F020D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5932351F3EC1EA10B9B2405D /* Pods-VideoPlayerDemo.debug.xcconfig */,
+				300EECBDDEB42E8D4282F382 /* Pods-VideoPlayerDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28C58E402858813C003E3BA9 /* VideoPlayerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28C58E6B2858813D003E3BA9 /* Build configuration list for PBXNativeTarget "VideoPlayerDemo" */;
+			buildPhases = (
+				59C281EFB27C2776F384B4FC /* [CP] Check Pods Manifest.lock */,
+				28C58E3D2858813C003E3BA9 /* Sources */,
+				28C58E3E2858813C003E3BA9 /* Frameworks */,
+				28C58E3F2858813C003E3BA9 /* Resources */,
+				741AE97EE64B321331C768F3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VideoPlayerDemo;
+			productName = VideoPlayerDemo;
+			productReference = 28C58E412858813C003E3BA9 /* VideoPlayerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		28C58E562858813D003E3BA9 /* VideoPlayerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28C58E6E2858813D003E3BA9 /* Build configuration list for PBXNativeTarget "VideoPlayerDemoTests" */;
+			buildPhases = (
+				28C58E532858813D003E3BA9 /* Sources */,
+				28C58E542858813D003E3BA9 /* Frameworks */,
+				28C58E552858813D003E3BA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28C58E592858813D003E3BA9 /* PBXTargetDependency */,
+			);
+			name = VideoPlayerDemoTests;
+			productName = VideoPlayerDemoTests;
+			productReference = 28C58E572858813D003E3BA9 /* VideoPlayerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		28C58E602858813D003E3BA9 /* VideoPlayerDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28C58E712858813D003E3BA9 /* Build configuration list for PBXNativeTarget "VideoPlayerDemoUITests" */;
+			buildPhases = (
+				28C58E5D2858813D003E3BA9 /* Sources */,
+				28C58E5E2858813D003E3BA9 /* Frameworks */,
+				28C58E5F2858813D003E3BA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28C58E632858813D003E3BA9 /* PBXTargetDependency */,
+			);
+			name = VideoPlayerDemoUITests;
+			productName = VideoPlayerDemoUITests;
+			productReference = 28C58E612858813D003E3BA9 /* VideoPlayerDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28C58E392858813C003E3BA9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					28C58E402858813C003E3BA9 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					28C58E562858813D003E3BA9 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 28C58E402858813C003E3BA9;
+					};
+					28C58E602858813D003E3BA9 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 28C58E402858813C003E3BA9;
+					};
+				};
+			};
+			buildConfigurationList = 28C58E3C2858813C003E3BA9 /* Build configuration list for PBXProject "VideoPlayerDemo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 28C58E382858813C003E3BA9;
+			productRefGroup = 28C58E422858813C003E3BA9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28C58E402858813C003E3BA9 /* VideoPlayerDemo */,
+				28C58E562858813D003E3BA9 /* VideoPlayerDemoTests */,
+				28C58E602858813D003E3BA9 /* VideoPlayerDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28C58E3F2858813C003E3BA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28C58E782858819E003E3BA9 /* testSong.mp3 in Resources */,
+				28C58E772858819E003E3BA9 /* testMovie.mp4 in Resources */,
+				28C58E512858813D003E3BA9 /* LaunchScreen.storyboard in Resources */,
+				28C58E4C2858813C003E3BA9 /* Main.storyboard in Resources */,
+				28C58ECB28588474003E3BA9 /* Assets.xcassets in Resources */,
+				28C58EB12858844E003E3BA9 /* AlexPlayer.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28C58E552858813D003E3BA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28C58E5F2858813D003E3BA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		59C281EFB27C2776F384B4FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VideoPlayerDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		741AE97EE64B321331C768F3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VideoPlayerDemo/Pods-VideoPlayerDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VideoPlayerDemo/Pods-VideoPlayerDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VideoPlayerDemo/Pods-VideoPlayerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28C58E3D2858813C003E3BA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28C58EA72858844E003E3BA9 /* AlexResponseExpandButtton.swift in Sources */,
+				28C58EB32858844E003E3BA9 /* AlexPlayerConstant.swift in Sources */,
+				28C58EAF2858844E003E3BA9 /* HYMediaCacheLocation.swift in Sources */,
+				28C58EB22858844E003E3BA9 /* AlexPlayerCommonConfig.swift in Sources */,
+				28C58EAD2858844E003E3BA9 /* HYMediaCacheDelegate.swift in Sources */,
+				28C58EC828588463003E3BA9 /* AlexPlayerCacheListView.swift in Sources */,
+				28C58EAE2858844E003E3BA9 /* HYMediaCacherDelegate.swift in Sources */,
+				28C58E7C2858839A003E3BA9 /* PlayerListTableViewCell.swift in Sources */,
+				28C58EB82858844E003E3BA9 /* AlexPlayerCommonView.swift in Sources */,
+				28C58EB52858844E003E3BA9 /* AlexCacheStorage.swift in Sources */,
+				28C58EAB2858844E003E3BA9 /* AlexStorage.swift in Sources */,
+				28C58EC728588463003E3BA9 /* AlexPlayerCacheListCell.swift in Sources */,
+				28C58EBD2858844E003E3BA9 /* HYWithoutNetView.swift in Sources */,
+				28C58E492858813C003E3BA9 /* ViewController.swift in Sources */,
+				28C58EA62858844E003E3BA9 /* String+AlexEncryption.swift in Sources */,
+				28C58EBF2858844E003E3BA9 /* HYControlPanelView.swift in Sources */,
+				28C58EC22858844E003E3BA9 /* HYAudiovisualSpeedyManager.swift in Sources */,
+				28C58EC928588463003E3BA9 /* AlexCacheProgressView.swift in Sources */,
+				28C58EB42858844E003E3BA9 /* AlexAudiovisualCommonModel.swift in Sources */,
+				28C58EB72858844E003E3BA9 /* AlexPlayerCommonViewDelegate.swift in Sources */,
+				28C58EB92858844E003E3BA9 /* AlexAudiovisualCommonManager.swift in Sources */,
+				28C58EBE2858844E003E3BA9 /* HYFullScreenMaskView.swift in Sources */,
+				28C58EA92858844E003E3BA9 /* AlexMediaCacheManager.swift in Sources */,
+				28C58EBA2858844E003E3BA9 /* HYMoreFunctionSpeedCollectionViewCell.swift in Sources */,
+				28C58EBC2858844E003E3BA9 /* HYEndPlayView.swift in Sources */,
+				28C58E452858813C003E3BA9 /* AppDelegate.swift in Sources */,
+				28C58EC12858844E003E3BA9 /* HYAudioPlayView.swift in Sources */,
+				28C58EB62858844E003E3BA9 /* AlexFileDirectory.swift in Sources */,
+				28C58EA82858844E003E3BA9 /* AlexDefaultVideoCacheLocation.swift in Sources */,
+				28C58EBB2858844E003E3BA9 /* HYSpeedyRemindView.swift in Sources */,
+				28C58E7A2858836F003E3BA9 /* VideoViewController.swift in Sources */,
+				28C58EB02858844E003E3BA9 /* AlexVideoCacheManager.swift in Sources */,
+				28C58EAC2858844E003E3BA9 /* AlexMediaCacher.swift in Sources */,
+				28C58EAA2858844E003E3BA9 /* AlexMediaCryptor.swift in Sources */,
+				28C58EC02858844E003E3BA9 /* HYAccelerationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28C58E532858813D003E3BA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28C58E5C2858813D003E3BA9 /* VideoPlayerDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28C58E5D2858813D003E3BA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28C58E682858813D003E3BA9 /* VideoPlayerDemoUITestsLaunchTests.swift in Sources */,
+				28C58E662858813D003E3BA9 /* VideoPlayerDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		28C58E592858813D003E3BA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28C58E402858813C003E3BA9 /* VideoPlayerDemo */;
+			targetProxy = 28C58E582858813D003E3BA9 /* PBXContainerItemProxy */;
+		};
+		28C58E632858813D003E3BA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28C58E402858813C003E3BA9 /* VideoPlayerDemo */;
+			targetProxy = 28C58E622858813D003E3BA9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		28C58E4A2858813C003E3BA9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28C58E4B2858813C003E3BA9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		28C58E4F2858813D003E3BA9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28C58E502858813D003E3BA9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		28C58E692858813D003E3BA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		28C58E6A2858813D003E3BA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28C58E6C2858813D003E3BA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5932351F3EC1EA10B9B2405D /* Pods-VideoPlayerDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z447S5C46T;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VideoPlayerDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.light.cn.VideoPlayerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "VideoPlayerDemo/VideoPlayerDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		28C58E6D2858813D003E3BA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 300EECBDDEB42E8D4282F382 /* Pods-VideoPlayerDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z447S5C46T;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VideoPlayerDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.light.cn.VideoPlayerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "VideoPlayerDemo/VideoPlayerDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		28C58E6F2858813D003E3BA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z447S5C46T;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.light.cn.VideoPlayerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VideoPlayerDemo.app/VideoPlayerDemo";
+			};
+			name = Debug;
+		};
+		28C58E702858813D003E3BA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z447S5C46T;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.light.cn.VideoPlayerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VideoPlayerDemo.app/VideoPlayerDemo";
+			};
+			name = Release;
+		};
+		28C58E722858813D003E3BA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z447S5C46T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.light.cn.VideoPlayerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VideoPlayerDemo;
+			};
+			name = Debug;
+		};
+		28C58E732858813D003E3BA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z447S5C46T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.light.cn.VideoPlayerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VideoPlayerDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28C58E3C2858813C003E3BA9 /* Build configuration list for PBXProject "VideoPlayerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28C58E692858813D003E3BA9 /* Debug */,
+				28C58E6A2858813D003E3BA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28C58E6B2858813D003E3BA9 /* Build configuration list for PBXNativeTarget "VideoPlayerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28C58E6C2858813D003E3BA9 /* Debug */,
+				28C58E6D2858813D003E3BA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28C58E6E2858813D003E3BA9 /* Build configuration list for PBXNativeTarget "VideoPlayerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28C58E6F2858813D003E3BA9 /* Debug */,
+				28C58E702858813D003E3BA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28C58E712858813D003E3BA9 /* Build configuration list for PBXNativeTarget "VideoPlayerDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28C58E722858813D003E3BA9 /* Debug */,
+				28C58E732858813D003E3BA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28C58E392858813C003E3BA9 /* Project object */;
+}

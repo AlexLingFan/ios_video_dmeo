@@ -1,0 +1,20 @@
+PODS:
+  - Reachability (3.2)
+  - SnapKit (5.6.0)
+
+DEPENDENCIES:
+  - Reachability
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - Reachability
+    - SnapKit
+
+SPEC CHECKSUMS:
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+
+PODFILE CHECKSUM: 8080f53e535793e7662a77a3f781472ea0ae8742
+
+COCOAPODS: 1.11.2
